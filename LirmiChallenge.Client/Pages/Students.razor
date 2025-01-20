@@ -1,0 +1,40 @@
+@page "/students"
+@using LirmiChallenge.Client.Services
+@using LirmiChallenge.Client.Models
+@inject StudentService StudentService
+
+<PageTitle>Estudiantes</PageTitle>
+
+<MudText Typo="Typo.h4" GutterBottom="true">Estudiantes</MudText>
+<MudTable Items="@students" Dense="true" Hover="true" SortLabel="Ordenar por">
+    <HeaderContent>
+        <MudTh>Nombre</MudTh>
+        <MudTh>Apellido</MudTh>
+        <MudTh>Edad</MudTh>
+        <MudTh>Grado</MudTh>
+        <MudTh>Acciones</MudTh>
+    </HeaderContent>
+   <RowTemplate>
+        <MudTd DataLabel="Nombre">@context.Name</MudTd>
+        <MudTd DataLabel="Apellido">@context.Lastname</MudTd>
+        <MudTd DataLabel="Edad">@context.Age</MudTd>
+        <MudTd DataLabel="Grado">@context.Grade</MudTd>
+        <MudTd DataLabel="Acciones">
+            <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
+            <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
+        </MudTd>
+    </RowTemplate>
+     <PagerContent>
+            <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
+        </PagerContent>
+</MudTable>
+
+
+@code {
+    private List<Student>? students;
+    protected override async Task OnInitializedAsync()
+    {
+        students = await StudentService.GetAllStudentsAsync();
+    }
+
+}

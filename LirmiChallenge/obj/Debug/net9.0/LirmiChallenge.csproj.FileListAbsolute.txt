@@ -32,9 +32,10 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\LirmiChallenge.AssemblyInfo.cs
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\LirmiChallenge.csproj.CoreCompileInputs.cache
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\LirmiChallenge.MvcApplicationPartsAssemblyInfo.cache
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\LirmiChallenge.sourcelink.json
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\scopedcss\bundle\LirmiChallenge.styles.css
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\compressed\tzxjg6is5z-mhumzvqd1g.gz
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\compressed\0wz98yz2xy-lzoc4abpk8.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\compressed\tzxjg6is5z-du7z45fy1o.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\compressed\0wz98yz2xy-u9015k2po7.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\compressed\orb4vl78ld-2jeq8efc6q.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\staticwebassets.build.json
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\obj\Debug\net9.0\staticwebassets.development.json

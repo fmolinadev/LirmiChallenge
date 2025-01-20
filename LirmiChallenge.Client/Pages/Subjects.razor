@@ -1,0 +1,46 @@
+﻿@page "/subjects"
+@using MudBlazor
+@using LirmiChallenge.Client.Services
+@using LirmiChallenge.Client.Models
+@inject SubjectService SubjectService
+
+
+<PageTitle>Asignaturas</PageTitle>
+
+<MudText Typo="Typo.h4" GutterBottom="true">Asignaturas</MudText>
+
+<MudTable Items="@subjects" Dense="true" Hover="true" SortLabel="Ordenar por" Elevation="0">
+    <HeaderContent>
+        <MudTh>ID</MudTh>
+        <MudTh>Nombre</MudTh>
+        <MudTh>Descripción</MudTh>
+        <MudTh>Acciones</MudTh>
+    </HeaderContent>
+   <RowTemplate>
+            <MudTd DataLabel="ID">@context.Id</MudTd>
+            <MudTd DataLabel="Nombre">@context.Name</MudTd>
+            <MudTd DataLabel="Descripción">@context.Description</MudTd>
+            <MudTd DataLabel="Acciones">
+                <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
+                <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
+            </MudTd>
+</RowTemplate>
+ <PagerContent>
+            <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
+        </PagerContent>
+
+</MudTable>
+
+
+@code {
+    private List<Subject> subjects = new();
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        subjects = await SubjectService.GetAllSubjectsAsync();
+    }
+
+}
+
+

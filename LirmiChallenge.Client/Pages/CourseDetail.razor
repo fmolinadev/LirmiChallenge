@@ -1,0 +1,42 @@
+@page "/courses/{CourseId:int}"
+@using LirmiChallenge.Client.Services
+@using LirmiChallenge.Client.Models
+@inject CourseService CourseService
+
+<PageTitle>Detalles del Curso</PageTitle>
+
+<MudText Typo="Typo.h4">Detalles del Curso</MudText>
+
+@if (course != null)
+{
+    <MudPaper Elevation="4" Class="pa-4">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudCard>
+                    <MudCardContent>
+                        <MudText Typo="Typo.h6">Nombre: @course.Name</MudText>
+                        <MudText Typo="Typo.h6">Color: <span style="color:@course.Color;">@course.Color</span></MudText>
+                        <MudText Typo="Typo.h6">Total de Estudiantes: @course.TotalStudents</MudText>
+                        <MudText Typo="Typo.h6">Total de Asignaturas: @course.TotalSubject</MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+    </MudPaper>
+}
+else
+{
+    <MudText>Curso no encontrado.</MudText>
+}
+
+@code {
+    [Parameter]
+    public int CourseId { get; set; }
+
+    private Course? course;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        course = await CourseService.GetCourseByIdAsync(CourseId);
+    }
+}

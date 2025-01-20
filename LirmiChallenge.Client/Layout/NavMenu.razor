@@ -1,8 +1,39 @@
-﻿
+﻿@using LirmiChallenge.Client.Services
+@using LirmiChallenge.Client.Models
+@inject CourseService CourseService
+
 <MudNavMenu>
     <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
-    <MudNavLink Href="counter" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Add">Counter</MudNavLink>
-    <MudNavLink Href="weather" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Weather</MudNavLink>
+    <MudNavLink Href="/subjects" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Book">Asignaturas</MudNavLink>
+    <MudNavLink Href="/students" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Person">Estudiantes</MudNavLink>
+    <MudNavGroup Title="Cursos" Icon="@Icons.Material.Filled.Class">
+    <MudNavLink  Href="/courses" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Class">Todos los cursos</MudNavLink>
+     @if (courses != null && courses.Any())
+    {
+        @foreach (var course in courses)
+        {
+            <MudNavMenu>
+                <MudNavLink Href="@($"/courses/{course.Id}")">
+               <MudElement Class="ms-1 d-flex justify-center align-left">
+                    <MudIcon Icon="@Icons.Material.Filled.Book" Style="@($"color:{course.Color}; margin-right:12px;")" />
+                    @course.Name
+                </MudElement>               
+            </MudNavLink>
+
+            </MudNavMenu>
+        }
+
+    }
+    </MudNavGroup>
+
+   
 </MudNavMenu>
 
+@code {
+    private IEnumerable<Course>? courses;
 
+    protected override async Task OnInitializedAsync()
+    {
+        courses = await CourseService.GetAllCoursesAsync();
+    }
+}
