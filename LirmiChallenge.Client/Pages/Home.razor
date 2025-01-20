@@ -1,4 +1,6 @@
 ﻿@page "/"
+@using LirmiChallenge.Client.Services
+@inject HomeService HomeService
 
 <PageTitle>Inicio</PageTitle>
 
@@ -10,23 +12,38 @@
         <MudItem xs="12" sm="4">
             <MudCard>
                 <MudCardContent>
-                    <MudText Typo="Typo.h6">Cursos: 5</MudText>
+                    <MudText Typo="Typo.h6">
+                        Cursos: @(homeSummary?.CoursesCount > 0 ? homeSummary.CoursesCount.ToString() : "No hay cursos")
+                    </MudText>
                 </MudCardContent>
             </MudCard>
         </MudItem>
         <MudItem xs="12" sm="4">
             <MudCard>
                 <MudCardContent>
-                    <MudText Typo="Typo.h6">Asignaturas: 10</MudText>
+                    <MudText Typo="Typo.h6">
+                        Asignaturas: @(homeSummary?.SubjectsCount > 0 ? homeSummary.SubjectsCount.ToString() : "No hay asignaturas")
+                    </MudText>
                 </MudCardContent>
             </MudCard>
         </MudItem>
         <MudItem xs="12" sm="4">
             <MudCard>
                 <MudCardContent>
-                    <MudText Typo="Typo.h6">Estudiantes: 120</MudText>
+                    <MudText Typo="Typo.h6">
+                        Estudiantes: @(homeSummary?.StudentsCount > 0 ? homeSummary.StudentsCount.ToString() : "No hay estudiantes")
+                    </MudText>
                 </MudCardContent>
             </MudCard>
         </MudItem>
     </MudGrid>
 </MudPaper>
+
+@code {
+    private HomeSummary? homeSummary;
+
+    protected override async Task OnInitializedAsync()
+    {
+        homeSummary = await HomeService.GetHomeSummaryAsync();
+    }
+}

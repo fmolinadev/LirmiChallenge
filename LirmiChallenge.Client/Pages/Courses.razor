@@ -1,10 +1,50 @@
 @page "/courses"
+@using LirmiChallenge.Client.Services
+@using LirmiChallenge.Client.Models
+@inject CourseService CourseService
+@using MudBlazor
 
 <PageTitle>Cursos</PageTitle>
 
 <MudText Typo="Typo.h4" GutterBottom="true">Cursos</MudText>
 
-<span>Tabla de curso</span>
+<span>Tabla de cursos</span>
 
+<MudTable Items="@courses" Dense="true" Hover="true" SortLabel="Ordenar por" Elevation="0" >
+    
+    <HeaderContent>
+            <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Course, object>(x => x.Id)">ID</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.Name)">Nombre</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.Color)">Color</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.TotalStudents)">Cant. de Estudiantes</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.TotalSubject)">Asignaturas</MudTableSortLabel></MudTh>
+            <MudTh>Acciones</MudTh>
+     </HeaderContent>
+     <RowTemplate>
+                <MudTd DataLabel="ID">@context.Id</MudTd>
+                <MudTd DataLabel="Name">@context.Name</MudTd>
+                <MudTd DataLabel="Color"> <span style="display: inline-block; background-color: @context.Color; height: 20px; width: 20px; border-radius: 50%;"></span></MudTd>
+                <MudTd DataLabel="TotalStudents">@context.TotalStudents</MudTd>
+                <MudTd DataLabel="TotalSubject">@context.TotalSubject</MudTd>
+                <MudTd DataLabel="Acciones">
+                    <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
+                </MudTd>
 
+</RowTemplate>
+
+     <PagerContent>
+            <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
+        </PagerContent>
+</MudTable>
 <MudButton Color="Color.Primary" Variant="Variant.Filled">Agregar Curso</MudButton>
+
+@code {
+    private IEnumerable<Course>? courses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        courses = await CourseService.GetAllCoursesAsync();
+    }
+}
+

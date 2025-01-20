@@ -5,7 +5,7 @@ build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.MudDebugAnalyzer = 
 build_property.MudAllowedAttributePattern = 
-build_property.MudIllegalParameters = 
+build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net9.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -35,16 +35,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/CourseDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Courses.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Students.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Subjects.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Routes.razor]
