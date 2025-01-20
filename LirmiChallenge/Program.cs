@@ -1,11 +1,19 @@
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
 using LirmiChallenge.Client.Pages;
+using LirmiChallenge.Client.Services;
 using LirmiChallenge.Components;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 
+
 builder.Services.AddMudServices();
+builder.Services.AddScoped<HomeService>();
+builder.Services.AddScoped<CourseService>();
+builder.Services.AddScoped<SubjectService>();
+builder.Services.AddScoped<StudentService>();
 
 
 builder.Services.AddRazorComponents()
@@ -26,7 +34,7 @@ else
     app.UseHsts();
 }
 
-/* app.UseHttpsRedirection(); */
+app.UseHttpsRedirection(); 
 
 app.UseStaticFiles();
 app.UseAntiforgery();

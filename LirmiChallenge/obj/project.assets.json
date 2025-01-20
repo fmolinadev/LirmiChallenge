@@ -102,6 +102,12 @@
           "build/net9.0/_._": {}
         }
       },
+      "Microsoft.AspNetCore.Components.WebAssembly.DevServer/9.0.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Microsoft.AspNetCore.Components.WebAssembly.Server/9.0.1": {
         "type": "package",
         "compile": {
@@ -328,34 +334,34 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Localization/8.0.8": {
+      "Microsoft.Extensions.Localization/9.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
-          "Microsoft.Extensions.Localization.Abstractions": "8.0.8",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
-          "Microsoft.Extensions.Options": "8.0.2"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.1",
+          "Microsoft.Extensions.Localization.Abstractions": "9.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.1",
+          "Microsoft.Extensions.Options": "9.0.1"
         },
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.Localization.dll": {
+          "lib/net9.0/Microsoft.Extensions.Localization.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Localization.dll": {
+          "lib/net9.0/Microsoft.Extensions.Localization.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.Extensions.Localization.Abstractions/8.0.8": {
+      "Microsoft.Extensions.Localization.Abstractions/9.0.1": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+          "lib/net9.0/Microsoft.Extensions.Localization.Abstractions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+          "lib/net9.0/Microsoft.Extensions.Localization.Abstractions.dll": {
             "related": ".xml"
           }
         }
@@ -465,24 +471,25 @@
           }
         }
       },
-      "MudBlazor/7.16.0": {
+      "MudBlazor/8.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "8.0.8",
-          "Microsoft.AspNetCore.Components.Web": "8.0.8",
-          "Microsoft.Extensions.Localization": "8.0.8"
+          "Microsoft.AspNetCore.Components": "9.0.1",
+          "Microsoft.AspNetCore.Components.Web": "9.0.1",
+          "Microsoft.Extensions.Localization": "9.0.1"
         },
         "compile": {
-          "lib/net8.0/MudBlazor.dll": {
+          "lib/net9.0/MudBlazor.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/MudBlazor.dll": {
+          "lib/net9.0/MudBlazor.dll": {
             "related": ".xml"
           }
         },
         "build": {
+          "build/MudBlazor.targets": {},
           "buildTransitive/MudBlazor.props": {}
         },
         "buildMultiTargeting": {
@@ -494,7 +501,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly": "9.0.0",
-          "MudBlazor": "7.0.0"
+          "Microsoft.AspNetCore.Components.WebAssembly.DevServer": "9.0.0-preview",
+          "MudBlazor": "8.0.0"
         },
         "compile": {
           "bin/placeholder/LirmiChallenge.Client.dll": {}
@@ -601,6 +609,174 @@
         "lib/net9.0/Microsoft.AspNetCore.Components.WebAssembly.xml",
         "microsoft.aspnetcore.components.webassembly.9.0.1.nupkg.sha512",
         "microsoft.aspnetcore.components.webassembly.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly.DevServer/9.0.0": {
+      "sha512": "k0i95CLhe9h6pfQUCvOksSY3Kz7ukxWLrXrADfrYzlvawCyO8oq+bviOTevNl2cS8RA8hmyWK0we3bZ1BNtCoA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.webassembly.devserver/9.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/Microsoft.AspNetCore.Components.WebAssembly.DevServer.targets",
+        "microsoft.aspnetcore.components.webassembly.devserver.9.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.components.webassembly.devserver.nuspec",
+        "tools/ARM64/aspnetcorev2_inprocess.dll",
+        "tools/BlazorDebugProxy/BrowserDebugHost.dll",
+        "tools/BlazorDebugProxy/BrowserDebugHost.runtimeconfig.json",
+        "tools/BlazorDebugProxy/BrowserDebugProxy.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.Scripting.dll",
+        "tools/BlazorDebugProxy/Microsoft.CodeAnalysis.dll",
+        "tools/BlazorDebugProxy/Microsoft.FileFormats.dll",
+        "tools/BlazorDebugProxy/Microsoft.NET.WebAssembly.Webcil.dll",
+        "tools/BlazorDebugProxy/Microsoft.SymbolStore.dll",
+        "tools/BlazorDebugProxy/Newtonsoft.Json.dll",
+        "tools/Microsoft.AspNetCore.Antiforgery.dll",
+        "tools/Microsoft.AspNetCore.Antiforgery.xml",
+        "tools/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Authentication.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Authentication.Core.dll",
+        "tools/Microsoft.AspNetCore.Authentication.Core.xml",
+        "tools/Microsoft.AspNetCore.Authentication.dll",
+        "tools/Microsoft.AspNetCore.Authentication.xml",
+        "tools/Microsoft.AspNetCore.Authorization.Policy.dll",
+        "tools/Microsoft.AspNetCore.Authorization.Policy.xml",
+        "tools/Microsoft.AspNetCore.Authorization.dll",
+        "tools/Microsoft.AspNetCore.Authorization.xml",
+        "tools/Microsoft.AspNetCore.Components.Authorization.dll",
+        "tools/Microsoft.AspNetCore.Components.Authorization.xml",
+        "tools/Microsoft.AspNetCore.Components.Endpoints.dll",
+        "tools/Microsoft.AspNetCore.Components.Endpoints.xml",
+        "tools/Microsoft.AspNetCore.Components.Forms.dll",
+        "tools/Microsoft.AspNetCore.Components.Forms.xml",
+        "tools/Microsoft.AspNetCore.Components.Web.dll",
+        "tools/Microsoft.AspNetCore.Components.Web.xml",
+        "tools/Microsoft.AspNetCore.Components.WebAssembly.Server.dll",
+        "tools/Microsoft.AspNetCore.Components.WebAssembly.Server.xml",
+        "tools/Microsoft.AspNetCore.Components.dll",
+        "tools/Microsoft.AspNetCore.Components.xml",
+        "tools/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Connections.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "tools/Microsoft.AspNetCore.Cryptography.Internal.xml",
+        "tools/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.DataProtection.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.DataProtection.Extensions.dll",
+        "tools/Microsoft.AspNetCore.DataProtection.Extensions.xml",
+        "tools/Microsoft.AspNetCore.DataProtection.dll",
+        "tools/Microsoft.AspNetCore.DataProtection.xml",
+        "tools/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Diagnostics.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Diagnostics.dll",
+        "tools/Microsoft.AspNetCore.Diagnostics.xml",
+        "tools/Microsoft.AspNetCore.HostFiltering.dll",
+        "tools/Microsoft.AspNetCore.HostFiltering.xml",
+        "tools/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Hosting.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Hosting.dll",
+        "tools/Microsoft.AspNetCore.Hosting.xml",
+        "tools/Microsoft.AspNetCore.Html.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Html.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Http.Extensions.dll",
+        "tools/Microsoft.AspNetCore.Http.Extensions.xml",
+        "tools/Microsoft.AspNetCore.Http.Features.dll",
+        "tools/Microsoft.AspNetCore.Http.Features.xml",
+        "tools/Microsoft.AspNetCore.Http.dll",
+        "tools/Microsoft.AspNetCore.Http.xml",
+        "tools/Microsoft.AspNetCore.HttpOverrides.dll",
+        "tools/Microsoft.AspNetCore.HttpOverrides.xml",
+        "tools/Microsoft.AspNetCore.Metadata.dll",
+        "tools/Microsoft.AspNetCore.Metadata.xml",
+        "tools/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "tools/Microsoft.AspNetCore.Routing.Abstractions.xml",
+        "tools/Microsoft.AspNetCore.Routing.dll",
+        "tools/Microsoft.AspNetCore.Routing.xml",
+        "tools/Microsoft.AspNetCore.Server.HttpSys.dll",
+        "tools/Microsoft.AspNetCore.Server.HttpSys.xml",
+        "tools/Microsoft.AspNetCore.Server.IIS.dll",
+        "tools/Microsoft.AspNetCore.Server.IIS.xml",
+        "tools/Microsoft.AspNetCore.Server.IISIntegration.dll",
+        "tools/Microsoft.AspNetCore.Server.IISIntegration.xml",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Core.xml",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.xml",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.xml",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.xml",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.dll",
+        "tools/Microsoft.AspNetCore.Server.Kestrel.xml",
+        "tools/Microsoft.AspNetCore.StaticAssets.dll",
+        "tools/Microsoft.AspNetCore.StaticAssets.xml",
+        "tools/Microsoft.AspNetCore.StaticFiles.dll",
+        "tools/Microsoft.AspNetCore.StaticFiles.xml",
+        "tools/Microsoft.AspNetCore.WebUtilities.dll",
+        "tools/Microsoft.AspNetCore.WebUtilities.xml",
+        "tools/Microsoft.AspNetCore.dll",
+        "tools/Microsoft.AspNetCore.xml",
+        "tools/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "tools/Microsoft.Extensions.Configuration.Binder.dll",
+        "tools/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "tools/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "tools/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "tools/Microsoft.Extensions.Configuration.Json.dll",
+        "tools/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "tools/Microsoft.Extensions.Configuration.dll",
+        "tools/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tools/Microsoft.Extensions.DependencyInjection.dll",
+        "tools/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "tools/Microsoft.Extensions.Diagnostics.dll",
+        "tools/Microsoft.Extensions.Features.dll",
+        "tools/Microsoft.Extensions.Features.xml",
+        "tools/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "tools/Microsoft.Extensions.FileProviders.Composite.dll",
+        "tools/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "tools/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "tools/Microsoft.Extensions.FileProviders.Physical.dll",
+        "tools/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tools/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "tools/Microsoft.Extensions.Hosting.dll",
+        "tools/Microsoft.Extensions.Logging.Abstractions.dll",
+        "tools/Microsoft.Extensions.Logging.Configuration.dll",
+        "tools/Microsoft.Extensions.Logging.Console.dll",
+        "tools/Microsoft.Extensions.Logging.Debug.dll",
+        "tools/Microsoft.Extensions.Logging.EventLog.dll",
+        "tools/Microsoft.Extensions.Logging.EventSource.dll",
+        "tools/Microsoft.Extensions.Logging.dll",
+        "tools/Microsoft.Extensions.ObjectPool.dll",
+        "tools/Microsoft.Extensions.ObjectPool.xml",
+        "tools/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "tools/Microsoft.Extensions.Options.dll",
+        "tools/Microsoft.Extensions.Primitives.dll",
+        "tools/Microsoft.Extensions.WebEncoders.dll",
+        "tools/Microsoft.Extensions.WebEncoders.xml",
+        "tools/Microsoft.JSInterop.dll",
+        "tools/Microsoft.JSInterop.xml",
+        "tools/Microsoft.Net.Http.Headers.dll",
+        "tools/Microsoft.Net.Http.Headers.xml",
+        "tools/System.Diagnostics.EventLog.dll",
+        "tools/System.Security.Cryptography.Pkcs.dll",
+        "tools/System.Security.Cryptography.Xml.dll",
+        "tools/blazor-devserver.deps.json",
+        "tools/blazor-devserver.dll",
+        "tools/blazor-devserver.exe",
+        "tools/blazor-devserver.runtimeconfig.json",
+        "tools/blazor-devserver.xml",
+        "tools/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll",
+        "tools/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll",
+        "tools/runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll",
+        "tools/x64/aspnetcorev2_inprocess.dll",
+        "tools/x86/aspnetcorev2_inprocess.dll"
       ]
     },
     "Microsoft.AspNetCore.Components.WebAssembly.Server/9.0.1": {
@@ -947,10 +1123,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Localization/8.0.8": {
-      "sha512": "n32ZGmc2UOv9R/xsBHQPOxBsqCSAAJSoMtFqoQ8zOegB2P+H6+773OyCWg4jRBkO/3dmCyBJXB0yLAOVW2/C/w==",
+    "Microsoft.Extensions.Localization/9.0.1": {
+      "sha512": "UgvX4Yb2T3tEsKT30ktZr0H7kTRPapCgEH0bdTwxiEGSdA39/hAQMvvb+vgHpqmevDU5+puyI9ujRkmmbF946w==",
       "type": "package",
-      "path": "microsoft.extensions.localization/8.0.8",
+      "path": "microsoft.extensions.localization/9.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -958,18 +1134,18 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net462/Microsoft.Extensions.Localization.dll",
         "lib/net462/Microsoft.Extensions.Localization.xml",
-        "lib/net8.0/Microsoft.Extensions.Localization.dll",
-        "lib/net8.0/Microsoft.Extensions.Localization.xml",
+        "lib/net9.0/Microsoft.Extensions.Localization.dll",
+        "lib/net9.0/Microsoft.Extensions.Localization.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Localization.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Localization.xml",
-        "microsoft.extensions.localization.8.0.8.nupkg.sha512",
+        "microsoft.extensions.localization.9.0.1.nupkg.sha512",
         "microsoft.extensions.localization.nuspec"
       ]
     },
-    "Microsoft.Extensions.Localization.Abstractions/8.0.8": {
-      "sha512": "WYIsqP/A6dH/LWJznrvgoNPc7Q+CUJD0E78765GL3aonBtyFK1BKtPzBvvlnrr3SVqSO2r6xJCLgCEiCMG1gfA==",
+    "Microsoft.Extensions.Localization.Abstractions/9.0.1": {
+      "sha512": "CABog43lyaZQMjmlktuImCy6zmAzRBaXqN81uPaMQjlp//ISDVYItZPh6KWpWRF4MY/B67X5oDc3JTUpfdocZw==",
       "type": "package",
-      "path": "microsoft.extensions.localization.abstractions/8.0.8",
+      "path": "microsoft.extensions.localization.abstractions/9.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -977,11 +1153,11 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net462/Microsoft.Extensions.Localization.Abstractions.dll",
         "lib/net462/Microsoft.Extensions.Localization.Abstractions.xml",
-        "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll",
-        "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.Localization.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.xml",
-        "microsoft.extensions.localization.abstractions.8.0.8.nupkg.sha512",
+        "microsoft.extensions.localization.abstractions.9.0.1.nupkg.sha512",
         "microsoft.extensions.localization.abstractions.nuspec"
       ]
     },
@@ -1189,10 +1365,10 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
-    "MudBlazor/7.16.0": {
-      "sha512": "68bEFn7MLCyOB4yYxtvZG+AA+bZbxBDcIOhnSVFrHrAg8LLXVw1LxHCp9EyRktlREpnoAO1JxINp+5WeHc9Z4w==",
+    "MudBlazor/8.0.0": {
+      "sha512": "itY10dugofdvLYnJ1VZSzUIiKVqNvnTz4eEMYlHUdrOfsk9xShj7k1EW5H6ssMmkbQzShlLBHlUt+VPFGoEJGw==",
       "type": "package",
-      "path": "mudblazor/7.16.0",
+      "path": "mudblazor/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1200,16 +1376,17 @@
         "Nuget.png",
         "README.md",
         "analyzers/dotnet/cs/MudBlazor.Analyzers.dll",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
         "build/Microsoft.AspNetCore.StaticWebAssets.props",
         "build/MudBlazor.props",
         "build/MudBlazor.targets",
         "buildMultiTargeting/MudBlazor.props",
         "buildTransitive/MudBlazor.props",
-        "lib/net7.0/MudBlazor.dll",
-        "lib/net7.0/MudBlazor.xml",
         "lib/net8.0/MudBlazor.dll",
         "lib/net8.0/MudBlazor.xml",
-        "mudblazor.7.16.0.nupkg.sha512",
+        "lib/net9.0/MudBlazor.dll",
+        "lib/net9.0/MudBlazor.xml",
+        "mudblazor.8.0.0.nupkg.sha512",
         "mudblazor.nuspec",
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
@@ -1224,7 +1401,8 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "LirmiChallenge.Client >= 1.0.0",
-      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 9.*"
+      "Microsoft.AspNetCore.Components.WebAssembly.Server >= 9.*",
+      "MudBlazor >= 8.0.0"
     ]
   },
   "packageFolders": {
@@ -1284,6 +1462,10 @@
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
             "target": "Package",
             "version": "[9.*, )"
+          },
+          "MudBlazor": {
+            "target": "Package",
+            "version": "[8.0.0, )"
           }
         },
         "imports": [
