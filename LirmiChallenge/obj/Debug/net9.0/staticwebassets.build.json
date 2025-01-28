@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "miGmqWgfq5O795ycT9TscHHSmGNQKM6zbZHsw5zM9og=",
+  "Hash": "a9Rk3a6iCIOgS1vLLKY8S5BbXMzVpvm7CXAQ+q5wslM=",
   "Source": "LirmiChallenge",
   "BasePath": "_content/LirmiChallenge",
   "Mode": "Default",
@@ -92,8 +92,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "3tpc9g1nbr",
-      "Integrity": "WTk4LJMJ3Migw4LEN/Ey5ueOtaWnWYh1zcqMValr+sc=",
+      "Fingerprint": "29feez7v42",
+      "Integrity": "SlHr/ZK1SlS/HYFx0IXDJYZFNaYN0696VYMeyzzNQLk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -323,8 +323,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "s4675npc9l",
-      "Integrity": "NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU=",
+      "Fingerprint": "kl8tkufirv",
+      "Integrity": "OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.pdb"
@@ -344,8 +344,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "cylnm1ovak",
-      "Integrity": "5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI=",
+      "Fingerprint": "2rsngz6de2",
+      "Integrity": "Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.wasm"
@@ -5370,12 +5370,12 @@
       "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\6r4iy0t0ev-wyl6b2gjv4.gz"
     },
     {
-      "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-s4675npc9l.gz",
+      "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-kl8tkufirv.gz",
       "SourceId": "LirmiChallenge.Client",
       "SourceType": "Project",
       "ContentRoot": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/LirmiChallenge.Client#[.{fingerprint=s4675npc9l}]!.pdb.gz",
+      "RelativePath": "_framework/LirmiChallenge.Client#[.{fingerprint=kl8tkufirv}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5384,11 +5384,11 @@
       "RelatedAsset": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dgrff31u2o",
-      "Integrity": "vSPorHno9YNpmkYrd95dtTWWd9MliMgBqEqj9seQSuc=",
+      "Fingerprint": "4lppy2t17u",
+      "Integrity": "yAdh7krYHZpyJ+jvYRonCr2wjLXcBrhfb3hbZuhSbA4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-s4675npc9l.gz"
+      "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-kl8tkufirv.gz"
     },
     {
       "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7da7l4edt2-tinfecfh1e.gz",
@@ -5853,7 +5853,7 @@
       "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\bzy93balra-3azrjxh966.gz"
     },
     {
-      "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-3tpc9g1nbr.gz",
+      "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-29feez7v42.gz",
       "SourceId": "LirmiChallenge.Client",
       "SourceType": "Project",
       "ContentRoot": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\",
@@ -5867,11 +5867,11 @@
       "RelatedAsset": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0ldogge3yv",
-      "Integrity": "PLU+3Fa9FPKuxyZyPv4VY2IYiwUzZPKO7SPgrYTwABY=",
+      "Fingerprint": "7g5bmrivsv",
+      "Integrity": "V/I7ASDOvM0xbWAzyDDW/2CJL8htxWpsySc9Sj/Grx0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-3tpc9g1nbr.gz"
+      "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-29feez7v42.gz"
     },
     {
       "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\ca4q4co2bp-w0ay1b4srp.gz",
@@ -8289,12 +8289,12 @@
       "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\uzxjo7sk5w-tnqstt8i3f.gz"
     },
     {
-      "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-cylnm1ovak.gz",
+      "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-2rsngz6de2.gz",
       "SourceId": "LirmiChallenge.Client",
       "SourceType": "Project",
       "ContentRoot": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/LirmiChallenge.Client#[.{fingerprint=cylnm1ovak}]!.wasm.gz",
+      "RelativePath": "_framework/LirmiChallenge.Client#[.{fingerprint=2rsngz6de2}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8303,11 +8303,11 @@
       "RelatedAsset": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gm59iejhf8",
-      "Integrity": "uD4437rXUq8hCNo/D6zld5GvCCHNQztvrRD7VqAZDKc=",
+      "Fingerprint": "qwt58t30gs",
+      "Integrity": "qvICFHMc1A0i9WYJpg8NwoDrgeDjmNAGdG51Z+qhEC0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-cylnm1ovak.gz"
+      "OriginalItemSpec": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-2rsngz6de2.gz"
     },
     {
       "Identity": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\vnhcfcqvli-krtg4e9rjb.gz",
@@ -9328,23 +9328,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WTk4LJMJ3Migw4LEN/Ey5ueOtaWnWYh1zcqMValr+sc=\""
+          "Value": "\"SlHr/ZK1SlS/HYFx0IXDJYZFNaYN0696VYMeyzzNQLk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:57 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WTk4LJMJ3Migw4LEN/Ey5ueOtaWnWYh1zcqMValr+sc="
+          "Value": "sha256-SlHr/ZK1SlS/HYFx0IXDJYZFNaYN0696VYMeyzzNQLk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-3tpc9g1nbr.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-29feez7v42.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -9371,11 +9371,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PLU+3Fa9FPKuxyZyPv4VY2IYiwUzZPKO7SPgrYTwABY=\""
+          "Value": "\"V/I7ASDOvM0xbWAzyDDW/2CJL8htxWpsySc9Sj/Grx0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:33:09 GMT"
         },
         {
           "Name": "Vary",
@@ -9387,19 +9387,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"WTk4LJMJ3Migw4LEN/Ey5ueOtaWnWYh1zcqMValr+sc=\""
+          "Value": "W/\"SlHr/ZK1SlS/HYFx0IXDJYZFNaYN0696VYMeyzzNQLk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WTk4LJMJ3Migw4LEN/Ey5ueOtaWnWYh1zcqMValr+sc="
+          "Value": "sha256-SlHr/ZK1SlS/HYFx0IXDJYZFNaYN0696VYMeyzzNQLk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-3tpc9g1nbr.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\c1b6e199vv-29feez7v42.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9424,11 +9424,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PLU+3Fa9FPKuxyZyPv4VY2IYiwUzZPKO7SPgrYTwABY=\""
+          "Value": "\"V/I7ASDOvM0xbWAzyDDW/2CJL8htxWpsySc9Sj/Grx0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:33:09 GMT"
         },
         {
           "Name": "Vary",
@@ -9438,7 +9438,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PLU+3Fa9FPKuxyZyPv4VY2IYiwUzZPKO7SPgrYTwABY="
+          "Value": "sha256-V/I7ASDOvM0xbWAzyDDW/2CJL8htxWpsySc9Sj/Grx0="
         }
       ]
     },
@@ -12262,7 +12262,7 @@
       ]
     },
     {
-      "Route": "_framework/LirmiChallenge.Client.cylnm1ovak.wasm",
+      "Route": "_framework/LirmiChallenge.Client.2rsngz6de2.wasm",
       "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -12276,7 +12276,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "66325"
+          "Value": "67861"
         },
         {
           "Name": "Content-Type",
@@ -12284,21 +12284,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI=\""
+          "Value": "\"Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:39 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:02 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cylnm1ovak"
+          "Value": "2rsngz6de2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI="
+          "Value": "sha256-Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50="
         },
         {
           "Name": "label",
@@ -12307,13 +12307,13 @@
       ]
     },
     {
-      "Route": "_framework/LirmiChallenge.Client.cylnm1ovak.wasm",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-cylnm1ovak.gz",
+      "Route": "_framework/LirmiChallenge.Client.2rsngz6de2.wasm",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-2rsngz6de2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000039745628"
+          "Quality": "0.000039022867"
         }
       ],
       "ResponseHeaders": [
@@ -12331,15 +12331,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25159"
+          "Value": "25625"
         },
         {
           "Name": "ETag",
-          "Value": "\"uD4437rXUq8hCNo/D6zld5GvCCHNQztvrRD7VqAZDKc=\""
+          "Value": "\"qvICFHMc1A0i9WYJpg8NwoDrgeDjmNAGdG51Z+qhEC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
         },
         {
           "Name": "Vary",
@@ -12351,17 +12351,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI=\""
+          "Value": "W/\"Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cylnm1ovak"
+          "Value": "2rsngz6de2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI="
+          "Value": "sha256-Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50="
         },
         {
           "Name": "label",
@@ -12370,8 +12370,8 @@
       ]
     },
     {
-      "Route": "_framework/LirmiChallenge.Client.cylnm1ovak.wasm.gz",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-cylnm1ovak.gz",
+      "Route": "_framework/LirmiChallenge.Client.2rsngz6de2.wasm.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-2rsngz6de2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12388,7 +12388,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25159"
+          "Value": "25625"
         },
         {
           "Name": "Content-Type",
@@ -12396,11 +12396,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uD4437rXUq8hCNo/D6zld5GvCCHNQztvrRD7VqAZDKc=\""
+          "Value": "\"qvICFHMc1A0i9WYJpg8NwoDrgeDjmNAGdG51Z+qhEC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
         },
         {
           "Name": "Vary",
@@ -12410,11 +12410,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cylnm1ovak"
+          "Value": "2rsngz6de2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uD4437rXUq8hCNo/D6zld5GvCCHNQztvrRD7VqAZDKc="
+          "Value": "sha256-qvICFHMc1A0i9WYJpg8NwoDrgeDjmNAGdG51Z+qhEC0="
         },
         {
           "Name": "label",
@@ -12423,6 +12423,167 @@
       ]
     },
     {
+      "Route": "_framework/LirmiChallenge.Client.kl8tkufirv.pdb",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Jan 2025 16:42:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kl8tkufirv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/LirmiChallenge.Client.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/LirmiChallenge.Client.kl8tkufirv.pdb",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-kl8tkufirv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000027704668"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36094"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yAdh7krYHZpyJ+jvYRonCr2wjLXcBrhfb3hbZuhSbA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kl8tkufirv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/LirmiChallenge.Client.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/LirmiChallenge.Client.kl8tkufirv.pdb.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-kl8tkufirv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36094"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yAdh7krYHZpyJ+jvYRonCr2wjLXcBrhfb3hbZuhSbA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kl8tkufirv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yAdh7krYHZpyJ+jvYRonCr2wjLXcBrhfb3hbZuhSbA4="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/LirmiChallenge.Client.pdb.gz"
+        }
+      ]
+    },
+    {
       "Route": "_framework/LirmiChallenge.Client.pdb",
       "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.pdb",
       "Selectors": [],
@@ -12437,7 +12598,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "45504"
+          "Value": "46620"
         },
         {
           "Name": "Content-Type",
@@ -12445,28 +12606,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU=\""
+          "Value": "\"OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:39 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:02 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU="
+          "Value": "sha256-OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck="
         }
       ]
     },
     {
       "Route": "_framework/LirmiChallenge.Client.pdb",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-s4675npc9l.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-kl8tkufirv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000028377650"
+          "Quality": "0.000027704668"
         }
       ],
       "ResponseHeaders": [
@@ -12484,15 +12645,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "35238"
+          "Value": "36094"
         },
         {
           "Name": "ETag",
-          "Value": "\"vSPorHno9YNpmkYrd95dtTWWd9MliMgBqEqj9seQSuc=\""
+          "Value": "\"yAdh7krYHZpyJ+jvYRonCr2wjLXcBrhfb3hbZuhSbA4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
         },
         {
           "Name": "Vary",
@@ -12504,19 +12665,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU=\""
+          "Value": "W/\"OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU="
+          "Value": "sha256-OPPBAOYuy/zhYB8SBx+3e9pOkT4YwSDOUBx/xfX1pck="
         }
       ]
     },
     {
       "Route": "_framework/LirmiChallenge.Client.pdb.gz",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-s4675npc9l.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-kl8tkufirv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12533,7 +12694,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "35238"
+          "Value": "36094"
         },
         {
           "Name": "Content-Type",
@@ -12541,11 +12702,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vSPorHno9YNpmkYrd95dtTWWd9MliMgBqEqj9seQSuc=\""
+          "Value": "\"yAdh7krYHZpyJ+jvYRonCr2wjLXcBrhfb3hbZuhSbA4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
         },
         {
           "Name": "Vary",
@@ -12555,168 +12716,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vSPorHno9YNpmkYrd95dtTWWd9MliMgBqEqj9seQSuc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/LirmiChallenge.Client.s4675npc9l.pdb",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\LirmiChallenge.Client.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "45504"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:39 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s4675npc9l"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/LirmiChallenge.Client.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/LirmiChallenge.Client.s4675npc9l.pdb",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-s4675npc9l.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000028377650"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35238"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vSPorHno9YNpmkYrd95dtTWWd9MliMgBqEqj9seQSuc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s4675npc9l"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NHR1xtnV9lC6edWreWvwY+dmTpn5iADdjYwKhMCtdqU="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/LirmiChallenge.Client.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/LirmiChallenge.Client.s4675npc9l.pdb.gz",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\7670jdm0xh-s4675npc9l.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "35238"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vSPorHno9YNpmkYrd95dtTWWd9MliMgBqEqj9seQSuc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "s4675npc9l"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vSPorHno9YNpmkYrd95dtTWWd9MliMgBqEqj9seQSuc="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/LirmiChallenge.Client.pdb.gz"
+          "Value": "sha256-yAdh7krYHZpyJ+jvYRonCr2wjLXcBrhfb3hbZuhSbA4="
         }
       ]
     },
@@ -12735,7 +12735,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "66325"
+          "Value": "67861"
         },
         {
           "Name": "Content-Type",
@@ -12743,28 +12743,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI=\""
+          "Value": "\"Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:39 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:02 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI="
+          "Value": "sha256-Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50="
         }
       ]
     },
     {
       "Route": "_framework/LirmiChallenge.Client.wasm",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-cylnm1ovak.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-2rsngz6de2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000039745628"
+          "Quality": "0.000039022867"
         }
       ],
       "ResponseHeaders": [
@@ -12782,15 +12782,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25159"
+          "Value": "25625"
         },
         {
           "Name": "ETag",
-          "Value": "\"uD4437rXUq8hCNo/D6zld5GvCCHNQztvrRD7VqAZDKc=\""
+          "Value": "\"qvICFHMc1A0i9WYJpg8NwoDrgeDjmNAGdG51Z+qhEC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
         },
         {
           "Name": "Vary",
@@ -12802,19 +12802,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI=\""
+          "Value": "W/\"Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5Ijcd/RV+X1hVRPvkuI1w7Fp7H4uUV+qY1ojqQkLlMI="
+          "Value": "sha256-Tg35FiIgfGoTY0N54m5vJJyxtXpFVj//3F++ZsyEo50="
         }
       ]
     },
     {
       "Route": "_framework/LirmiChallenge.Client.wasm.gz",
-      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-cylnm1ovak.gz",
+      "AssetFile": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\obj\\Debug\\net9.0\\compressed\\v2pzytqfwg-2rsngz6de2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12831,7 +12831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25159"
+          "Value": "25625"
         },
         {
           "Name": "Content-Type",
@@ -12839,11 +12839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uD4437rXUq8hCNo/D6zld5GvCCHNQztvrRD7VqAZDKc=\""
+          "Value": "\"qvICFHMc1A0i9WYJpg8NwoDrgeDjmNAGdG51Z+qhEC0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:19:41 GMT"
+          "Value": "Tue, 28 Jan 2025 16:42:04 GMT"
         },
         {
           "Name": "Vary",
@@ -12853,7 +12853,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uD4437rXUq8hCNo/D6zld5GvCCHNQztvrRD7VqAZDKc="
+          "Value": "sha256-qvICFHMc1A0i9WYJpg8NwoDrgeDjmNAGdG51Z+qhEC0="
         }
       ]
     },

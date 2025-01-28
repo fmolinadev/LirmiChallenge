@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LirmiChallenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3adf26e1f5b3c9df3ad414503bd85f5cf7a7fcd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba3fe347e894c638c66f2fb55c62d852295d1e31")]
 [assembly: System.Reflection.AssemblyProductAttribute("LirmiChallenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LirmiChallenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
