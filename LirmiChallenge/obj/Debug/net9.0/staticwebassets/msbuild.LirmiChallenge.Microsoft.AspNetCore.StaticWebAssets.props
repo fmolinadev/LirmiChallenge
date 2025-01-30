@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2jeq8efc6q</Fingerprint>
-      <Integrity>8kNQh+LErZHx3sMz237BHWFasAGQ88EWakJrWWYOxTA=</Integrity>
+      <Fingerprint>bkuw52slah</Fingerprint>
+      <Integrity>u8/rzYm5rPUoyjCYtxKyat1pkYMFdARjti3g2jlMsAU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>

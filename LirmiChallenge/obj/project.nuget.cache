@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z0DAx+jmJUc=",
+  "dgSpecHash": "bpa42QEOSbY=",
   "success": true,
   "projectFilePath": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge\\LirmiChallenge.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "C:\\Users\\Moli\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.1\\microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "C:\\Users\\Moli\\.nuget\\packages\\microsoft.jsinterop\\9.0.1\\microsoft.jsinterop.9.0.1.nupkg.sha512",
     "C:\\Users\\Moli\\.nuget\\packages\\microsoft.jsinterop.webassembly\\9.0.1\\microsoft.jsinterop.webassembly.9.0.1.nupkg.sha512",
-    "C:\\Users\\Moli\\.nuget\\packages\\mudblazor\\8.0.0\\mudblazor.8.0.0.nupkg.sha512"
+    "C:\\Users\\Moli\\.nuget\\packages\\mudblazor\\8.1.0\\mudblazor.8.1.0.nupkg.sha512"
   ],
   "logs": []
 }
