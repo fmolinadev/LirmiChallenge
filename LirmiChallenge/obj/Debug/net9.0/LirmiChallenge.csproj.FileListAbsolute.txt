@@ -20,6 +20,8 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\LirmiChallenge.runtimeconfig.json
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\LirmiChallenge.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\LirmiChallenge.pdb
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\itextsharp.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\Microsoft.AspNetCore.Components.WebAssembly.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge\bin\Debug\net9.0\Microsoft.JSInterop.WebAssembly.dll

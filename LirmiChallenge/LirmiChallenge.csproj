@@ -8,6 +8,7 @@
 
 
   <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
     <PackageReference Include="MudBlazor" Version="8.1.0" />
     <ProjectReference Include="..\LirmiChallenge.Client\LirmiChallenge.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.*" />

@@ -73,6 +73,10 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
             }
           },
           "imports": [
@@ -163,6 +167,10 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[8.1.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
             }
           },
           "imports": [
