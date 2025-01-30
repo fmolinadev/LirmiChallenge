@@ -1,25 +1,158 @@
 ﻿@inherits LayoutComponentBase
+@using LirmiChallenge.Client.UI
 
-<MudThemeProvider Theme="@_theme" IsDarkMode="_isDarkMode" />
+<style>
+    :root {
+        --lirmi-spacer: @Styles.LirmiStyles.Spacer;
+        --lirmi-border-radius: @Styles.LirmiStyles.BorderRadius;
+        --lirmi-background-color: @Styles.LirmiStyles.ColorBackground;
+        --lirmi-text-dark: @Styles.LirmiStyles.ColorTextDark;
+        --lirmi-text-light: @Styles.LirmiStyles.ColorTextLight;
+        --lirmi-branding-primary: @Styles.LirmiStyles.BrandingSkyblue;
+        --lirmi-branding-secondary: @Styles.LirmiStyles.BrandingViolet;
+        --lirmi-branding-pink: @Styles.LirmiStyles.BrandingPink;
+        --lirmi-branding-detail: @Styles.LirmiStyles.BrandingYellow;
+        --lirmi-border-color: @Styles.LirmiStyles.ColorBorder;
+    }
+
+    .lirmi-table-container {
+        padding: var(--lirmi-spacer);
+        background-color: var(--lirmi-background-color);
+        border-radius: var(--lirmi-border-radius);
+        border: 1px solid var(--lirmi-border-color);
+        margin: 1rem 0;
+        box-shadow: 0px 1px 9px 4px rgba(0, 0, 0, 0.09);
+    }
+
+    .lirmi-card-content {
+        padding: calc(var(--lirmi-spacer) / 2);
+    }
+
+    .lirmi-text-title, .lirmi-text-subtitle, .lirmi-text-p {
+        color: var(--lirmi-text-dark);
+    }
+
+    .lirmi-web-title {
+        color: var(--lirmi-text-light);
+        font-size: 1.2rem;
+    }
+
+    .lirmi-text-title {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .lirmi-text-subtitle {
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .lirmi-text-p {
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: start;
+        font-stretch: condensed;
+    }
+
+    .lirmi-header-landing {
+        background-color: var(--lirmi-branding-detail);
+        text-align: center;
+    }
+
+    .lirmi-btn-container {
+        display: flex;
+        gap: 0.4rem;
+    }
+
+      .lirmi-between-container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start;
+        vertical-align: middle;
+        width: 100%; 
+        margin: 1rem 0rem;
+    }
+
+
+
+    .lirmi-button {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .lirmi-button-primary {
+        width: 200px;
+        height: 45px;
+        font-size: 0.8rem;
+        border-radius: 12px;
+        background-color: var(--lirmi-branding-secondary);
+        color: var(--lirmi-text-light);
+        text-align: center;
+    }
+
+    .lirmi-button-primary:hover {
+        background-color: var(--lirmi-branding-pink);
+    }
+
+    .lirmi-button-edit,
+    .lirmi-button-delete,
+    .lirmi-button-save {
+        color: var(--lirmi-branding-primary);
+    }
+
+    .lirmi-button-edit:hover,
+    .lirmi-button-save:hover {
+        background-color: var(--lirmi-branding-primary);
+        color: var(--lirmi-text-light);
+    }
+
+    .lirmi-button-delete:hover {
+        background-color: var(--lirmi-branding-detail);
+        color: var(--lirmi-text-dark);
+    }
+
+    .lirmi-title-container, .lirmi-spacer {
+        margin: 1rem 0;
+    }
+
+    .loader-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .loader-text {
+        margin-bottom: 1rem;
+    }
+
+    .loader-spinner {
+        color: var(--lirmi-branding-primary);
+    }
+</style>
+
+<MudThemeProvider Theme="@_theme" />
 <MudPopoverProvider />
-<MudDialogProvider />
+<MudDialogProvider FullWidth="true" MaxWidth="MaxWidth.ExtraSmall" CloseButton="true" BackdropClick="false" NoHeader="true" Position="DialogPosition.Center" CloseOnEscapeKey="true" />
 <MudSnackbarProvider />
 <MudLayout>
     <MudAppBar Elevation="1">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudText Typo="Typo.h5" Class="ml-3">Sistema de Gestión Escolar</MudText>
+        <MudText Typo="Typo.h5" Class="lirmi-web-title">Sistema de Gestión Escolar</MudText>
         <MudSpacer />
-        <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+        <MudIconButton Icon="@Icons.Custom.Brands.Google" Color="Color.Inherit" />
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+    <MudDrawer class="lirmi-appbar" @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
     </MudDrawer>
     <MudMainContent Class="mt-16 pa-4">
         @Body
     </MudMainContent>
 </MudLayout>
-
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
@@ -29,7 +162,6 @@
 
 @code {
     private bool _drawerOpen = true;
-    private bool _isDarkMode = true;
     private MudTheme? _theme = null;
 
     protected override void OnInitialized()
@@ -38,67 +170,15 @@
 
         _theme = new()
         {
-            PaletteLight = _lightPalette,
-            PaletteDark = _darkPalette,
-            LayoutProperties = new LayoutProperties()
+            Typography = new Typography()
+            {
+                Default = new DefaultTypography()
+                {
+                    FontFamily = new[] { "Poppins", "Helvetica", "sans-serif" }
+                }
+            }
         };
     }
 
-
-    private void DrawerToggle()
-    {
-        _drawerOpen = !_drawerOpen;
-    }
-
-    private void DarkModeToggle()
-    {
-        _isDarkMode = !_isDarkMode;
-    }
-
-    private readonly PaletteLight _lightPalette = new()
-    {
-        Black = "#110e2d",
-        AppbarText = "#424242",
-        AppbarBackground = "rgba(255,255,255,0.8)",
-        DrawerBackground = "#ffffff",
-        GrayLight = "#e8e8e8",
-        GrayLighter = "#f9f9f9",
-    };
-
-    private readonly PaletteDark _darkPalette = new()
-    {
-        Primary = "#7e6fff",
-        Surface = "#1e1e2d",
-        Background = "#1a1a27",
-        BackgroundGray = "#151521",
-        AppbarText = "#92929f",
-        AppbarBackground = "rgba(26,26,39,0.8)",
-        DrawerBackground = "#1a1a27",
-        ActionDefault = "#74718e",
-        ActionDisabled = "#9999994d",
-        ActionDisabledBackground = "#605f6d4d",
-        TextPrimary = "#b2b0bf",
-        TextSecondary = "#92929f",
-        TextDisabled = "#ffffff33",
-        DrawerIcon = "#92929f",
-        DrawerText = "#92929f",
-        GrayLight = "#2a2833",
-        GrayLighter = "#1e1e2d",
-        Info = "#4a86ff",
-        Success = "#3dcb6c",
-        Warning = "#ffb545",
-        Error = "#ff3f5f",
-        LinesDefault = "#33323e",
-        TableLines = "#33323e",
-        Divider = "#292838",
-        OverlayLight = "#1e1e2d80",
-    };
-
-    public string DarkLightModeButtonIcon => _isDarkMode switch
-    {
-        true => Icons.Material.Rounded.AutoMode,
-        false => Icons.Material.Outlined.DarkMode,
-    };
+    private void DrawerToggle() => _drawerOpen = !_drawerOpen;
 }
-
-

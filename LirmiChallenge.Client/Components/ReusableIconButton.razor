@@ -1,0 +1,10 @@
+@using MudBlazor
+@using LirmiChallenge.Client.UI
+
+<MudIconButton Icon="@Icon" Class="@Class" OnClick="OnClick" />
+
+@code {
+    [Parameter] public string Icon { get; set; }
+    [Parameter] public string Class { get; set; }
+    [Parameter] public EventCallback OnClick { get; set; }
+}

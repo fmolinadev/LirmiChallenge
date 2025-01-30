@@ -2,49 +2,131 @@
 @using LirmiChallenge.Client.Services
 @using LirmiChallenge.Client.Models
 @inject CourseService CourseService
+@inject NavigationManager NavigationManager
 @using MudBlazor
+@inject IJSRuntime JsRuntime 
+@using LirmiChallenge.Client.UI
 
 <PageTitle>Cursos</PageTitle>
 
-<MudText Typo="Typo.h4" GutterBottom="true">Cursos</MudText>
+@if (isLoading)
+{
+    <LoaderSpinner />
+}
+else {
+    <TextButtonRow 
+    TitleText="Todos los cursos" 
+    ButtonText="Descargar PDF" 
+    OnButtonClick="DownloadPdf" 
+  />
 
-<span>Tabla de cursos</span>
-
-<MudTable Items="@courses" Dense="true" Hover="true" SortLabel="Ordenar por" Elevation="0" >
-    
+<MudTable class="lirmi-table-container" Items="@filteredCourses" Dense="true" Hover="true" SortLabel="Ordenar por" Elevation="0">
+    <ToolBarContent>
+        <MudTextField @bind-Value="searchString1"
+                      Placeholder="Buscar curso..."
+                      Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search"
+                      IconSize="Size.Medium"
+                      Class="mt-0"
+                      TextChanged="@SearchTextChanged" />
+        <MudSpacer />
+    </ToolBarContent>
     <HeaderContent>
-            <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Course, object>(x => x.Id)">ID</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.Name)">Nombre</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.Color)">Color</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.TotalStudents)">Cant. de Estudiantes</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.TotalSubject)">Asignaturas</MudTableSortLabel></MudTh>
-            <MudTh>Acciones</MudTh>
-     </HeaderContent>
-     <RowTemplate>
-                <MudTd DataLabel="ID">@context.Id</MudTd>
-                <MudTd DataLabel="Name">@context.Name</MudTd>
-                <MudTd DataLabel="Color"> <span style="display: inline-block; background-color: @context.Color; height: 20px; width: 20px; border-radius: 50%;"></span></MudTd>
-                <MudTd DataLabel="TotalStudents">@context.TotalStudents</MudTd>
-                <MudTd DataLabel="TotalSubject">@context.TotalSubject</MudTd>
-                <MudTd DataLabel="Acciones">
-                    <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
-                    <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
-                </MudTd>
-
-</RowTemplate>
-
-     <PagerContent>
-            <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
-        </PagerContent>
+        <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.Name)">Nombre</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.Color)">Color</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.TotalStudents)">Cant. de Estudiantes</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<Course, object>(x => x.TotalSubject)">Asignaturas</MudTableSortLabel></MudTh>
+        <MudTh>Acciones</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Color"> <span style="display: inline-block; background-color: @context.Color; height: 20px; width: 20px; border-radius: 50%;"></span></MudTd>
+        <MudTd DataLabel="TotalStudents">@context.TotalStudents</MudTd>
+        <MudTd DataLabel="TotalSubject">@context.TotalSubject</MudTd>
+        <MudTd DataLabel="Acciones" class="lirmi-btn-container">
+            <ReusableIconButton Icon="@Icons.Material.Filled.Edit"Class="lirmi-button-edit" />
+            <ReusableIconButton Icon="@Icons.Material.Filled.Visibility" Class="lirmi-button-edit" OnClick="@(() => NavigateToCourseDetails(@context.Id))" />
+            <ReusableIconButton Icon="@Icons.Material.Filled.Delete" Class="lirmi-button-delete" OnClick="@(() => DeleteCourse(@context.Id))" />
+        </MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
+    </PagerContent>
+    <NoRecordsContent>
+        <MudText>No hay resultados para mostrar para la búsqueda: "@searchString1"</MudText>
+    </NoRecordsContent>
 </MudTable>
 <MudButton Color="Color.Primary" Variant="Variant.Filled">Agregar Curso</MudButton>
 
+}
+
 @code {
+    private bool isLoading = true;
     private IEnumerable<Course>? courses;
+    private IEnumerable<Course>? filteredCourses;
+    private string searchString1 = "";
+
+    private void NavigateToCourseDetails(int courseId)
+    {
+        NavigationManager.NavigateTo($"/courses/{courseId}");
+    }
 
     protected override async Task OnInitializedAsync()
     {
+        await Task.Delay(2000);
         courses = await CourseService.GetAllCoursesAsync();
+        filteredCourses = courses; 
+        isLoading = false;
+    }
+
+     private void DownloadPdf()
+    {
+        Console.WriteLine("Descargando PDF...");
+    }
+
+    private void OnSearch(string text)
+    {
+        searchString1 = text;
+
+        if (courses == null)
+        {
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(searchString1))
+        {
+            filteredCourses = courses;
+        }
+        else
+        {
+            filteredCourses = courses.Where(FilterFunc).ToList();
+        }
+    }
+
+    private bool FilterFunc(Course element)
+    {
+        if (string.IsNullOrWhiteSpace(searchString1))
+            return true;
+
+        return element != null &&
+               element.Name?.Contains(searchString1, StringComparison.OrdinalIgnoreCase) == true;
+    }
+
+    private void SearchTextChanged(string text)
+    {
+        OnSearch(text);
+    }
+
+
+    private async Task DeleteCourse(int courseId)
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Estas seguro de eliminar este curso?");
+
+        if (confirmed)
+        {
+            await CourseService.DeleteCourseAsync(courseId);
+            await OnInitializedAsync();
+           
+        }
     }
 }
-

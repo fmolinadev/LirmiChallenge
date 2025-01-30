@@ -1,46 +1,200 @@
 ﻿@page "/subjects"
 @using MudBlazor
-@using LirmiChallenge.Client.Services
-@using LirmiChallenge.Client.Models
+@inject IDialogService DialogService;
 @inject SubjectService SubjectService
-
+@inject IJSRuntime JsRuntime 
+@using LirmiChallenge.Client.Models
+@using LirmiChallenge.Client.Services
+@using LirmiChallenge.Client.Components
+@using LirmiChallenge.Client.UI
 
 <PageTitle>Asignaturas</PageTitle>
 
-<MudText Typo="Typo.h4" GutterBottom="true">Asignaturas</MudText>
+@if (isLoading)
+{
+    <LoaderSpinner />
+}
+else {
+    
+<TextButtonRow 
+    TitleText="Asignaturas" 
+    ButtonText="Descargar PDF" 
+    OnButtonClick="DownloadPdf" 
+/>
 
-<MudTable Items="@subjects" Dense="true" Hover="true" SortLabel="Ordenar por" Elevation="0">
+<MudTable class="lirmi-table-container" Items="@filteredSubjects" Dense="true" Hover="true" SortLabel="Ordenar por" Elevation="0">
+    <ToolBarContent>
+        <MudTextField @bind-Value="searchString1"
+                      Placeholder="Buscar asignatura..."
+                      Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search"
+                      IconSize="Size.Medium"
+                      Class="mt-0"
+                      TextChanged="@SearchTextChanged" />
+        <MudSpacer />
+    </ToolBarContent>
     <HeaderContent>
         <MudTh>ID</MudTh>
         <MudTh>Nombre</MudTh>
         <MudTh>Descripción</MudTh>
         <MudTh>Acciones</MudTh>
     </HeaderContent>
-   <RowTemplate>
-            <MudTd DataLabel="ID">@context.Id</MudTd>
-            <MudTd DataLabel="Nombre">@context.Name</MudTd>
-            <MudTd DataLabel="Descripción">@context.Description</MudTd>
-            <MudTd DataLabel="Acciones">
-                <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
-                <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
-            </MudTd>
-</RowTemplate>
- <PagerContent>
-            <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
-        </PagerContent>
-
+    <RowTemplate Context="subject"> 
+        <MudTd DataLabel="ID">@subject.Id</MudTd>
+        <MudTd DataLabel="Nombre">
+            @if (editingSubjectId == subject.Id)
+            {
+                <MudTextField @bind-Value="subject.Name" />
+            }
+            else
+            {
+                @subject.Name
+            }
+        </MudTd>
+        <MudTd DataLabel="Descripción">
+            @if (editingSubjectId == subject.Id)
+            {
+                <MudTextField @bind-Value="subject.Description" />
+            }
+            else
+            {
+                @subject.Description
+            }
+        </MudTd>
+        <MudTd DataLabel="Acciones" class="lirmi-btn-container">
+            @if (editingSubjectId == subject.Id)
+            {
+                <ReusableIconButton Icon="@Icons.Material.Filled.Save" Class="lirmi-button-edit" OnClick="@(() => SaveSubject(subject))" /> 
+                <ReusableIconButton Icon="@Icons.Material.Filled.Cancel" Class="lirmi-button-delete" OnClick="@(() => CancelEdit())" />
+            }
+            else
+            {
+                <ReusableIconButton Icon="@Icons.Material.Filled.Edit" Class="lirmi-button-edit" OnClick="@(() => EditSubject(subject.Id))" />
+            }
+            <ReusableIconButton Icon="@Icons.Material.Filled.Delete" Class="lirmi-button-delete" OnClick="@(() => DeleteSubject(subject.Id))" />
+        </MudTd>
+    </RowTemplate>
+    <PagerContent>
+        <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
+    </PagerContent>
+    <NoRecordsContent>
+        <MudText>No hay resultados para mostrar para la búsqueda: "@searchString1"</MudText>
+    </NoRecordsContent>
 </MudTable>
 
-
-@code {
-    private List<Subject> subjects = new();
-    
-
-    protected override async Task OnInitializedAsync()
-    {
-        subjects = await SubjectService.GetAllSubjectsAsync();
-    }
 
 }
 
 
+@code {
+    private bool isLoading = true;
+    private List<Subject> subjects = new();
+    private List<Subject>? filteredSubjects;
+    private string searchString1 = "";
+    private int? editingSubjectId;
+
+    private void DownloadPdf()
+    {
+        Console.WriteLine("Descargando PDF...");
+    }
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(1000);
+        subjects = await SubjectService.GetAllSubjectsAsync();
+        filteredSubjects = subjects;
+        isLoading = false;
+    }
+    private void OnSearch(string text)
+    {
+        searchString1 = text;
+
+        if (subjects == null)
+        {
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(searchString1))
+        {
+            filteredSubjects = subjects;
+        }
+        else
+        {
+            filteredSubjects = subjects.Where(FilterFunc).ToList();
+        }
+    }
+
+    private bool FilterFunc(Subject element)
+    {
+        if (string.IsNullOrWhiteSpace(searchString1))
+            return true;
+
+        return element != null &&
+               (element.Name?.Contains(searchString1, StringComparison.OrdinalIgnoreCase) == true ||
+                element.Description?.Contains(searchString1, StringComparison.OrdinalIgnoreCase) == true);
+    }
+
+    private void SearchTextChanged(string text)
+    {
+        OnSearch(text);
+    }
+
+    private void EditSubject(int id)
+    {
+        editingSubjectId = id;
+    }
+
+   private async Task SaveSubject(Subject subject)
+{
+    if (string.IsNullOrWhiteSpace(subject.Name) || subject.Name.Length < 3)
+    {
+        await JsRuntime.InvokeVoidAsync("alert", "El nombre debe tener al menos 3 caracteres.");
+        return;
+    }
+
+    if (subject.Description != null && subject.Description.Length > 200) 
+    {
+        await JsRuntime.InvokeVoidAsync("alert", "La descripción no puede superar los 200 caracteres.");
+        return;
+    }
+    
+    await SubjectService.UpdateSubjectAsync(subject);
+    editingSubjectId = null;
+    await OnInitializedAsync(); 
+}
+
+    private void CancelEdit()
+    {
+        editingSubjectId = null;
+    }
+
+    private async Task ConfirmDeleteSubjectAsync(Subject subject)
+    {
+        var dialogParameters = new DialogParameters { { "SubjectName", subject.Name } }; 
+        var dialogOptions = new DialogOptions { CloseOnEscapeKey = true }; 
+
+        var dialog = await DialogService.ShowAsync<Subjects>("Confirmar eliminación", dialogParameters,dialogOptions); 
+        var result = await dialog.Result;
+
+        if (!result.Canceled && result.Data is bool) 
+        {
+            await DeleteSubject(subject.Id); 
+            subjects = await SubjectService.GetAllSubjectsAsync(); 
+            filteredSubjects = subjects; 
+        }
+    }
+    
+    private async Task DeleteSubject(int subjectId)
+   
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Estas seguro de eliminar esta asignatura?");
+
+        if (confirmed)
+        {
+            await SubjectService.DeleteSubjectAsync(subjectId);
+            await OnInitializedAsync();
+           
+        }
+    }
+}

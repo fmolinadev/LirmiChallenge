@@ -5,7 +5,14 @@
 
 <PageTitle>Detalles del Curso</PageTitle>
 
-<MudText Typo="Typo.h4">Detalles del Curso</MudText>
+@if (isLoading)
+{
+    <LoaderSpinner />
+}
+else {
+    <div class="lirmi-title-container">
+    <MudText Class="lirmi-text-title" Typo="Typo.h4">Detalles del Curso</MudText>
+</div>
 
 @if (course != null)
 {
@@ -28,15 +35,21 @@ else
 {
     <MudText>Curso no encontrado.</MudText>
 }
+}
+
+
 
 @code {
     [Parameter]
     public int CourseId { get; set; }
+    private bool isLoading = true;
 
     private Course? course;
 
     protected override async Task OnParametersSetAsync()
     {
+        await Task.Delay(600);
         course = await CourseService.GetCourseByIdAsync(CourseId);
+        isLoading = false;
     }
 }

@@ -2,8 +2,9 @@
 @using LirmiChallenge.Client.Models
 @inject CourseService CourseService
 
+
 <MudNavMenu>
-    <MudNavLink Href="" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
+    <MudNavLink Href="/home" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
     <MudNavLink Href="/subjects" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Book">Asignaturas</MudNavLink>
     <MudNavLink Href="/students" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Person">Estudiantes</MudNavLink>
     <MudNavGroup Title="Cursos" Icon="@Icons.Material.Filled.Class">

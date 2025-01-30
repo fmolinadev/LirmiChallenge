@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8JYYAADDlAg=",
+  "dgSpecHash": "46AZgOsZyH4=",
   "success": true,
   "projectFilePath": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\LirmiChallenge.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Moli\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
+    "C:\\Users\\Moli\\.nuget\\packages\\itextsharp\\5.5.13.4\\itextsharp.5.5.13.4.nupkg.sha512",
     "C:\\Users\\Moli\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.1\\microsoft.aspnetcore.authorization.9.0.1.nupkg.sha512",
     "C:\\Users\\Moli\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.1\\microsoft.aspnetcore.components.9.0.1.nupkg.sha512",
     "C:\\Users\\Moli\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\9.0.1\\microsoft.aspnetcore.components.analyzers.9.0.1.nupkg.sha512",
@@ -35,5 +37,16 @@
     "C:\\Users\\Moli\\.nuget\\packages\\mudblazor\\8.0.0\\mudblazor.8.0.0.nupkg.sha512",
     "C:\\Users\\Moli\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.1\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"iTextSharp 5.5.13.4\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "iTextSharp",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

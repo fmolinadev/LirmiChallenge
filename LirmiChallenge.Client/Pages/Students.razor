@@ -1,12 +1,35 @@
 @page "/students"
 @using LirmiChallenge.Client.Services
 @using LirmiChallenge.Client.Models
+@using LirmiChallenge.Client.UI
 @inject StudentService StudentService
+@inject IJSRuntime JsRuntime 
 
 <PageTitle>Estudiantes</PageTitle>
 
-<MudText Typo="Typo.h4" GutterBottom="true">Estudiantes</MudText>
-<MudTable Items="@students" Dense="true" Hover="true" SortLabel="Ordenar por">
+@if (isLoading)
+{
+    <LoaderSpinner />
+}
+else {
+    <TextButtonRow 
+    TitleText="Estudiantes" 
+    ButtonText="Descargar PDF" 
+    OnButtonClick="DownloadPdf" 
+  />
+ 
+<MudTable class="lirmi-table-container" Items="@filteredStudents" Dense="true" Hover="true" SortLabel="Ordenar por">
+    <ToolBarContent>
+        
+        <MudTextField @bind-Value="searchString1"
+                      Placeholder="Buscar estudiantes..."
+                      Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search"
+                      IconSize="Size.Medium"
+                      Class="mt-0"
+                      TextChanged="@SearchTextChanged" />
+        <MudSpacer />
+    </ToolBarContent>
     <HeaderContent>
         <MudTh>Nombre</MudTh>
         <MudTh>Apellido</MudTh>
@@ -14,27 +37,186 @@
         <MudTh>Grado</MudTh>
         <MudTh>Acciones</MudTh>
     </HeaderContent>
-   <RowTemplate>
-        <MudTd DataLabel="Nombre">@context.Name</MudTd>
-        <MudTd DataLabel="Apellido">@context.Lastname</MudTd>
-        <MudTd DataLabel="Edad">@context.Age</MudTd>
-        <MudTd DataLabel="Grado">@context.Grade</MudTd>
-        <MudTd DataLabel="Acciones">
-            <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" />
-            <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
+    <RowTemplate Context="student">
+        <MudTd DataLabel="Nombre">
+            @if (editingStudentId == student.Id)
+            {
+                <MudTextField @bind-Value="student.Name" />
+            }
+            else
+            {
+                @student.Name
+            }
+        </MudTd>
+        <MudTd DataLabel="Apellido">
+            @if (editingStudentId == student.Id)
+            {
+                <MudTextField @bind-Value="student.Lastname" />
+            }
+            else
+            {
+                @student.Lastname
+            }
+        </MudTd>
+        <MudTd DataLabel="Edad">
+            @if (editingStudentId == student.Id)
+            {
+                <MudNumericField @bind-Value="student.Age" Min="0" />
+            }
+            else
+            {
+                @student.Age
+            }
+        </MudTd>
+        <MudTd DataLabel="Grado">
+            @if (editingStudentId == student.Id)
+            {
+                <MudTextField @bind-Value="student.Grade" />
+            }
+            else
+            {
+                @student.Grade
+            }
+        </MudTd>
+        <MudTd DataLabel="Acciones" class="lirmi-btn-container">
+            @if (editingStudentId == student.Id)
+            {
+                 <ReusableIconButton Icon="@Icons.Material.Filled.Save" Class="lirmi-button-save" OnClick="@(() => SaveStudent(student))" />
+                <ReusableIconButton Icon="@Icons.Material.Filled.Cancel" Class="lirmi-button-delete" OnClick="@(() => CancelEdit())" />
+            }
+            else
+            {
+                <ReusableIconButton Icon="@Icons.Material.Filled.Edit" Class="lirmi-button-edit" OnClick="@(() => EditStudent(student.Id))" />
+            }
+            <ReusableIconButton Icon="@Icons.Material.Filled.Delete"  Class="lirmi-button-delete"  OnClick="@(() => DeleteStudent(student.Id))" />
         </MudTd>
     </RowTemplate>
-     <PagerContent>
-            <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
-        </PagerContent>
+    <PagerContent>
+        <MudTablePager PageSizeOptions="new int[]{5, 10, 20}" />
+    </PagerContent>
+    <NoRecordsContent>
+        <MudText Typo="Typo.h6">No hay resultados para mostrar</MudText>
+    </NoRecordsContent>
 </MudTable>
-
+}
+ 
 
 @code {
+    private bool isLoading = true;
     private List<Student>? students;
+    private List<Student>? filteredStudents;
+    private string searchString1 = "";
+    private int? editingStudentId; 
+
     protected override async Task OnInitializedAsync()
     {
+        await Task.Delay(3000);
         students = await StudentService.GetAllStudentsAsync();
+        filteredStudents = students;
+        isLoading = false;
     }
 
+    private void OnSearch(string text)
+{
+    searchString1 = text;
+
+    if (students == null)
+    {
+        return;
+    }
+
+    if (string.IsNullOrWhiteSpace(searchString1))
+    {
+        filteredStudents = students;
+    }
+    else
+    {
+        filteredStudents = students.Where(FilterFunc).ToList();
+    }
+}
+
+    private void FilterStudents()
+    {
+        if (students == null)
+        {
+            return;
+        }
+
+        filteredStudents = students.Where(FilterFunc).ToList();
+    }
+
+    private bool FilterFunc(Student student)
+    {
+        bool matchesSearch = string.IsNullOrWhiteSpace(searchString1) || (student != null &&
+                               (student.Name?.Contains(searchString1, StringComparison.OrdinalIgnoreCase) == true ||
+                                student.Lastname?.Contains(searchString1, StringComparison.OrdinalIgnoreCase) == true ||
+                                student.Age.ToString().Contains(searchString1) ||
+                                student.Grade?.Contains(searchString1, StringComparison.OrdinalIgnoreCase) == true));
+
+    
+        return matchesSearch; 
+    }
+
+    private void SearchTextChanged(string text)
+    {
+        OnSearch(text);
+    }
+
+    private void EditStudent(int id)
+    {
+        editingStudentId = id;
+    }
+
+    private async Task SaveStudent(Student student)
+{
+    if (string.IsNullOrWhiteSpace(student.Name) || student.Name.Length < 3)
+    {
+        await JsRuntime.InvokeVoidAsync("alert", "El nombre debe tener al menos 3 caracteres.");
+        return; 
+    }
+
+    if (string.IsNullOrWhiteSpace(student.Lastname) || student.Lastname.Length < 3)
+    {
+        await JsRuntime.InvokeVoidAsync("alert", "El apellido debe tener al menos 3 caracteres.");
+        return; 
+    }
+
+    if (student.Age < 5 || student.Age > 18)
+    {
+        await JsRuntime.InvokeVoidAsync("alert", "La edad debe estar entre 5 y 18 años.");
+        return; 
+    }
+
+    await StudentService.UpdateStudentAsync(student);
+    editingStudentId = null;
+    students = await StudentService.GetAllStudentsAsync();
+    filteredStudents = students;
+}
+
+    private void CancelEdit()
+    {
+        editingStudentId = null;
+        students =  StudentService.GetAllStudentsAsync().Result;
+        filteredStudents = students; 
+    }
+
+    private async Task DeleteStudent(int studentId)
+   
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Estas seguro de eliminar este estudiante?");
+
+        if (confirmed)
+        {
+           await StudentService.DeleteStudentAsync(studentId);
+            await OnInitializedAsync();
+           
+        }
+    }
+
+     private void DownloadPdf()
+    {
+        Console.WriteLine("Descargando PDF...");
+    }
+
+   
 }

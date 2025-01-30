@@ -1,5 +1,6 @@
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\BouncyCastle.Cryptography.4gsqqg4tak.wasm
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.js
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.js.map
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.8o8n7iomrf.js
@@ -9,6 +10,7 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debu
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\itextsharp.nikqt0mk39.wasm
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.n41ua9ceve.wasm
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.9at76jd5um.wasm
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.h4ild4sjod.wasm
@@ -259,6 +261,7 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debu
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.Transactions.eqportussb.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Channels.6ly6a97nsg.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.Security.Principal.8v7pzc6f0d.wasm.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\itextsharp.nikqt0mk39.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.xd0pof1l0v.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.Numerics.Vectors.xwm370m73u.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Logging.4m4jo20ji4.wasm.gz
@@ -300,6 +303,7 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debu
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.4483uwth6m.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.Text.Encoding.Extensions.nlydxjh19m.wasm.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\BouncyCastle.Cryptography.4gsqqg4tak.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Physical.59vcbg751z.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.ComponentModel.DataAnnotations.dtsracnza3.wasm.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\System.Net.Security.ibdm0dxxqk.wasm.gz
@@ -412,6 +416,8 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debu
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\LirmiChallenge.Client.staticwebassets.endpoints.json
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\LirmiChallenge.Client.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\LirmiChallenge.Client.pdb
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\itextsharp.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\Microsoft.AspNetCore.Authorization.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\Microsoft.AspNetCore.Components.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -622,6 +628,8 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debu
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\LirmiChallenge.Client.csproj.CoreCompileInputs.cache
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\LirmiChallenge.Client.MvcApplicationPartsAssemblyInfo.cache
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\LirmiChallenge.Client.sourcelink.json
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\webcil\BouncyCastle.Cryptography.wasm
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\webcil\itextsharp.wasm
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.wasm
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -822,9 +830,11 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debu
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\blazor.boot.json
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\tzxjg6is5z-du7z45fy1o.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\0wz98yz2xy-u9015k2po7.gz
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\s5gio1l9xg-x0ueugt8gp.gz
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\iltmre1pgt-x0ueugt8gp.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\s5gio1l9xg-tswichycbp.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\iltmre1pgt-tswichycbp.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\z54p9v42ia-md9yvkcqlf.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\i79ycn8jw8-4gsqqg4tak.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\99rvzqng2u-nikqt0mk39.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\23k4q2bd8e-n41ua9ceve.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\8j2kyxhupq-h4ild4sjod.gz
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\t8jy3aqx4p-9at76jd5um.gz
@@ -1042,10 +1052,10 @@ D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debu
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\refint\LirmiChallenge.Client.dll
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\LirmiChallenge.Client.pdb
 D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\ref\LirmiChallenge.Client.dll
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.4zabxrnjtt.pdb
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.9cot7tz17p.wasm
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.4zabxrnjtt.pdb.gz
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.9cot7tz17p.wasm.gz
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\v2pzytqfwg-9cot7tz17p.gz
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\7670jdm0xh-4zabxrnjtt.gz
-D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\c1b6e199vv-lg4z5jh9b4.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.zp423p144p.pdb
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.i346b3dfbx.wasm
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.zp423p144p.pdb.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\bin\Debug\net9.0\wwwroot\_framework\LirmiChallenge.Client.i346b3dfbx.wasm.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\v2pzytqfwg-i346b3dfbx.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\7670jdm0xh-zp423p144p.gz
+D:\Moli\Desarrollo\Technical\Lirmi\LirmiChallenge\LirmiChallenge.Client\obj\Debug\net9.0\compressed\c1b6e199vv-6b63o5t3cx.gz

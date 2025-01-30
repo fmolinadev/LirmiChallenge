@@ -1,49 +1,126 @@
-﻿@page "/"
-@using LirmiChallenge.Client.Services
+﻿@page "/home"
+@using MudBlazor
+@using MudBlazor.Charts
+@using Microsoft.AspNetCore.Components.Routing
 @inject HomeService HomeService
+@inject IJSRuntime JSRuntime
+@using LirmiChallenge.Client.Services
+@using LirmiChallenge.Client.Models
+@using LirmiChallenge.Client.UI
+@using LirmiChallenge.Client.Utilities
 
-<PageTitle>Inicio</PageTitle>
+<PageTitle>Home</PageTitle>
 
-<MudText Typo="Typo.h4">Resumen General</MudText>
-<MudText>Información del año académico:</MudText>
+@if (isLoading)
+{
+    <LoaderSpinner />
+}
+else
+{
+    <div class="lirmi-title-container">
+    <MudText Typo="Typo.h3" Class="lirmi-text-title">Resumen General</MudText>
+</div>
 
-<MudPaper Elevation="4" Class="pa-4">
-    <MudGrid>
-        <MudItem xs="12" sm="4">
-            <MudCard>
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">
-                        Cursos: @(homeSummary?.CoursesCount > 0 ? homeSummary.CoursesCount.ToString() : "No hay cursos")
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="4">
-            <MudCard>
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">
-                        Asignaturas: @(homeSummary?.SubjectsCount > 0 ? homeSummary.SubjectsCount.ToString() : "No hay asignaturas")
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem xs="12" sm="4">
-            <MudCard>
-                <MudCardContent>
-                    <MudText Typo="Typo.h6">
-                        Estudiantes: @(homeSummary?.StudentsCount > 0 ? homeSummary.StudentsCount.ToString() : "No hay estudiantes")
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-    </MudGrid>
-</MudPaper>
+<MudGrid>
+    <MudItem xs="12" sm="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText Typo="Typo.h6">
+                    Cursos: @(homeSummary?.CoursesCount > 0 ? homeSummary.CoursesCount.ToString() : "No hay cursos")
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="12" sm="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText Typo="Typo.h6">
+                    Asignaturas: @(homeSummary?.SubjectsCount > 0 ? homeSummary.SubjectsCount.ToString() : "No hay asignaturas")
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    <MudItem xs="12" sm="4">
+        <MudCard>
+            <MudCardContent>
+                <MudText Typo="Typo.h6">
+                    Estudiantes: @(homeSummary?.StudentsCount > 0 ? homeSummary.StudentsCount.ToString() : "No hay estudiantes")
+                </MudText>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+</MudGrid>
+
+<MudDivider DividerType="DividerType.Middle" Class="my-6" />
+
+  <TextButtonRow 
+    TitleText="Resumen del ciclo 2024:" 
+    ButtonText="Descargar Resumen" 
+    OnButtonClick="DownloadPdf" 
+  />
+
+  <MudText Class="lirmi-text-p lirmi-spacer">Estado disponible el resumen con los principales indicadores del ciclo 2024, incluyendo el estado de los alumnos, la asistencia por curso, el promedio de exámenes y las planificaciones completadas. Explore los gráficos interactivos y descargue el informe completo para un análisis más profundo.</MudText>
+
+ <br>
+<MudGrid>
+    <MudItem xs="12" md="6">
+        <div id="studentStatusSection">  
+            <MudText Typo="Typo.h5" Class="lirmi-text-subtitle">Estado de alumnos</MudText>
+            <MudChart ChartType="ChartType.Bar" ChartSeries="@StudentStatusSeries" @bind-SelectedIndex="StudentStatusIndex" XAxisLabels="@Months" Width="100%" Height="350px"></MudChart>
+        </div>
+    </MudItem>
+    <MudItem xs="12" md="6">
+        <div id="planningSection">
+            <MudText Typo="Typo.h5" Class="lirmi-text-subtitle">Planificaciones completadas</MudText>
+            <MudChart ChartType="ChartType.Donut" LegendPosition="Position.Bottom" Width="300px" Height="300px" InputData="@PlanningData" InputLabels="@CourseLabels"></MudChart>
+        </div>
+    </MudItem>
+    
+</MudGrid>
+<br>
+<br>
+<MudGrid>
+    <MudItem xs="12" md="6">
+        <div id="averageExamSection">
+            <MudText Typo="Typo.h5" Class="lirmi-text-subtitle">Promedio de examenes</MudText>
+            <MudChart ChartType="ChartType.Line" ChartSeries="@AverageExamSeries" XAxisLabels="@Months" ChartOptions="@ChartOptions" Width="100%" Height="350px"></MudChart>
+        </div>
+    </MudItem> 
+
+    <MudItem xs="12" md="6">
+        <div id="attendanceSection">
+            <MudText Typo="Typo.h5" Class="lirmi-text-subtitle">Asistencia por Curso</MudText>
+            <MudChart ChartType="ChartType.Donut" LegendPosition="Position.Bottom" Width="300px" Height="300px" InputData="@AttendanceData" InputLabels="@CourseLabels"></MudChart>
+        </div>
+    </MudItem>
+</MudGrid>
+}
 
 @code {
+    private bool isLoading = true;
     private HomeSummary? homeSummary;
-
+    private int StudentStatusIndex = -1;
+    private int AverageExamIndex = -1; 
+    private List<ChartSeries> StudentStatusSeries = ChartSeriesFactory.GetStudentStatusSeries();
+    private List<ChartSeries> AverageExamSeries = ChartSeriesFactory.GetAverageExamSeries();
+    private bool firstRender = true;
+    private double[] AttendanceData = ChartData.AttendanceData;
+    private string[] CourseLabels = ChartData.CourseLabels;
+    private double[] PlanningData = ChartData.PlanningData; 
+    private string[] Months = ChartData.Months; 
+    private ChartOptions ChartOptions = new(); 
     protected override async Task OnInitializedAsync()
-    {
+    {   
+        await Task.Delay(2000);
         homeSummary = await HomeService.GetHomeSummaryAsync();
+        StudentStatusSeries = ChartSeriesFactory.GetStudentStatusSeries();
+        AverageExamSeries = ChartSeriesFactory.GetAverageExamSeries();
+        isLoading = false;
     }
+
+    private void DownloadPdf()
+    {
+        Console.WriteLine("Descargando PDF...");
+    }
+    
 }

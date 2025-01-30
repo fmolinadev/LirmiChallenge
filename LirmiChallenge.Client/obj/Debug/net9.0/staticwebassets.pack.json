@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\appsettings.json"
     },
     {
+      "Id": "D:\\Moli\\Desarrollo\\Technical\\Lirmi\\LirmiChallenge\\LirmiChallenge.Client\\wwwroot\\assets\\images\\docente.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\docente.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LirmiChallenge.Client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

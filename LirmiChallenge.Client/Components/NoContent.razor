@@ -1,0 +1,8 @@
+@namespace LirmiChallenge.Client.Components
+
+@code {
+    [Parameter]
+    public string SearchTerm { get; set; } = ""; 
+}
+
+<MudText>No hay resultados para mostrar para la búsqueda: "@SearchTerm"</MudText>

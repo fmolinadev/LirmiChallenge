@@ -27,6 +27,30 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Components/LoaderSpinner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2FkZXJTcGlubmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Components/NoContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOb0NvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Components/ReusableIconButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSZXVzYWJsZUljb25CdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Components/TextButtonRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUZXh0QnV0dG9uUm93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Components/ToolBarContent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUb29sQmFyQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Layout/LandingLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XExhbmRpbmdMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -45,6 +69,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/LandingPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFuZGluZ1BhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Moli/Desarrollo/Technical/Lirmi/LirmiChallenge/LirmiChallenge.Client/Pages/Students.razor]

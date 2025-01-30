@@ -7,10 +7,15 @@ namespace LirmiChallenge.Client.Services
     {
         private readonly List<Subject> _subjects = new List<Subject>
        {
-        new Subject { Id = 1, Name = "Matemáticas", Description = "Estudio de números y fórmulas" },
-        new Subject { Id = 2, Name = "Historia", Description = "Eventos históricos relevantes" },
-        new Subject { Id = 3, Name = "Ciencias", Description = "Exploración de fenómenos naturales" }
-    };
+            new Subject { Id = 1, Name = "Matemáticas", Description = "Estudio de números y fórmulas" },
+            new Subject { Id = 2, Name = "Historia", Description = "Eventos históricos relevantes" },
+            new Subject { Id = 3, Name = "Ciencias", Description = "Exploración de fenómenos naturales"},
+            new Subject { Id = 4, Name = "Ética", Description = "Reflexión sobre la moral y valores" }, 
+            new Subject { Id = 5, Name = "Música", Description = "Expresión artística a través del sonido" }, 
+            new Subject { Id = 6, Name = "Artes Plásticas", Description = "Creatividad visual y manual" }, 
+            new Subject { Id = 7, Name = "Educación Física", Description = "Desarrollo físico y bienestar" },
+            new Subject { Id = 8, Name = "Biología", Description = "Estudio de los seres vivos" } 
+        };
 
         public Task<List<Subject>> GetAllSubjectsAsync()
         {

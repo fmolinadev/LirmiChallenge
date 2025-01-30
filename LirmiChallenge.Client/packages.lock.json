@@ -2,6 +2,15 @@
   "version": 1,
   "dependencies": {
     "net9.0": {
+      "iTextSharp": {
+        "type": "Direct",
+        "requested": "[5.5.13.4, )",
+        "resolved": "5.5.13.4",
+        "contentHash": "/cvCNv8AJ+XuD99u4NfHSSxkBJKTdvP36wcfQF9V1Cjzi1ycyFSa4vJ64a3DhFVUTKVO60WF8OmAqngQDTHgYA==",
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.4.0"
+        }
+      },
       "Microsoft.AspNetCore.Components.WebAssembly": {
         "type": "Direct",
         "requested": "[9.*, )",
@@ -43,6 +52,11 @@
           "Microsoft.AspNetCore.Components.Web": "9.0.1",
           "Microsoft.Extensions.Localization": "9.0.1"
         }
+      },
+      "BouncyCastle.Cryptography": {
+        "type": "Transitive",
+        "resolved": "2.4.0",
+        "contentHash": "SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ=="
       },
       "Microsoft.AspNetCore.Authorization": {
         "type": "Transitive",

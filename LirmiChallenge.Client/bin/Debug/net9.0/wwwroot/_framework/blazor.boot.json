@@ -1,8 +1,10 @@
 {
   "mainAssemblyName": "LirmiChallenge.Client",
   "resources": {
-    "hash": "sha256-rnrFrRQz1UvCw5eN/wJdUTBfMSioc5pKNQSutl0jkeg=",
+    "hash": "sha256-TMsWMoe5uuw4YP97GfPVi5FalKDR9q4j4NnNcrxlRn8=",
     "fingerprinting": {
+      "BouncyCastle.Cryptography.4gsqqg4tak.wasm": "BouncyCastle.Cryptography.wasm",
+      "itextsharp.nikqt0mk39.wasm": "itextsharp.wasm",
       "Microsoft.AspNetCore.Authorization.n41ua9ceve.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.h4ild4sjod.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Forms.9at76jd5um.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
@@ -204,8 +206,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "LirmiChallenge.Client.9cot7tz17p.wasm": "LirmiChallenge.Client.wasm",
-      "LirmiChallenge.Client.4zabxrnjtt.pdb": "LirmiChallenge.Client.pdb"
+      "LirmiChallenge.Client.i346b3dfbx.wasm": "LirmiChallenge.Client.wasm",
+      "LirmiChallenge.Client.zp423p144p.pdb": "LirmiChallenge.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8o8n7iomrf.js": "sha256-WIUiy49hHQ3kOAtRdCtUzm3Yg5BnOqCC+Q+kri9Fi1g="
@@ -226,6 +228,8 @@
       "System.Private.CoreLib.u3k7k03qne.wasm": "sha256-iqXECPj8uFcb/7OzD0dDXV+C8VvMmS7RYZ6ZUnFdlTs="
     },
     "assembly": {
+      "BouncyCastle.Cryptography.4gsqqg4tak.wasm": "sha256-fNNkhoF1EtOBvzedd32l0piPt54gxoGNl/pAhfr3ze4=",
+      "itextsharp.nikqt0mk39.wasm": "sha256-oXiWuBTjO2GLGQS442o2Dgjza2vE5+c0CRI9wMktous=",
       "Microsoft.AspNetCore.Authorization.n41ua9ceve.wasm": "sha256-N6/4dp+rtuEu+iWs7ZZs30QrZzpGpF9KC6ulCWZCo2w=",
       "Microsoft.AspNetCore.Components.h4ild4sjod.wasm": "sha256-AYyXG0WrvwNEEX2QtbpR9AtYu26WKG+S10Q398vbgqY=",
       "Microsoft.AspNetCore.Components.Forms.9at76jd5um.wasm": "sha256-AZJqGXJM2Sos31wIr7syLy0TWCLYEWzemxDkwUyfPyk=",
@@ -418,10 +422,10 @@
       "WindowsBase.ovqw333kan.wasm": "sha256-7LCr4nX9JSGuwzMr8Rk8TGvC6ApzQNxCDiMV/0I9JlI=",
       "mscorlib.l6md3pggqy.wasm": "sha256-jZgH0LixLeQKqaq33akQgDGhfE7vbXbHtvCId5HC0Yo=",
       "netstandard.lij9csiyuf.wasm": "sha256-DeeBl9s8G34N3IfYRQ+MoY807amodj8cvpuvUSNaWE4=",
-      "LirmiChallenge.Client.9cot7tz17p.wasm": "sha256-h3SqYcFl58basda6W1ld8S+DN+jcn4tk1PH/NP/iZt8="
+      "LirmiChallenge.Client.i346b3dfbx.wasm": "sha256-wj75zsjjllC19Gy8M/i06dKtHcWW72SLR+MjHH588jY="
     },
     "pdb": {
-      "LirmiChallenge.Client.4zabxrnjtt.pdb": "sha256-UEl/1gcdqqpGKS9aCYeRSSchWTbp/3SWEWo+653Q35M="
+      "LirmiChallenge.Client.zp423p144p.pdb": "sha256-mYR3Wd1/Ed6tNIbf34+b+NIBWlT1FeizhDV8+/h2hQo="
     }
   },
   "cacheBootResources": true,

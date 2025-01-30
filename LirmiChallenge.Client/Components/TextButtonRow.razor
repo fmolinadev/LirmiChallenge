@@ -1,0 +1,19 @@
+@using LirmiChallenge.Client.UI
+
+<div class="lirmi-between-container">
+    <MudText Typo="Typo.h3" Class="lirmi-text-title">@TitleText</MudText>
+    <MudButton Variant="Variant.Filled" Class="lirmi-button-primary" OnClick="@OnButtonClick">
+        @ButtonText
+    </MudButton>
+</div>
+
+@code {
+    [Parameter]
+    public string TitleText { get; set; } = string.Empty;
+
+    [Parameter]
+    public string ButtonText { get; set; } = string.Empty;
+
+    [Parameter]
+    public EventCallback OnButtonClick { get; set; }
+}

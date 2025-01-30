@@ -1,0 +1,118 @@
+﻿@page "/"
+@using MudBlazor
+@using LirmiChallenge.Client.Services
+@using Microsoft.AspNetCore.Components.Routing
+@using LirmiChallenge.Client.UI
+@layout LirmiChallenge.Client.Layout.LandingLayout
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<style>
+
+    .grid-container {
+        padding: 3rem 1rem;
+        margin: auto;
+    }
+
+    .image-container { 
+       display: flex;
+       width: 100%;
+       height: 100%;
+       max-width: 700px;
+       max-height: 700px;
+       object-fit: cover;
+       border-radius: 12px;
+    }
+
+    .placement-text {  
+        display: flex;
+        flex-direction: column; 
+        align-items: start; 
+        width: 100%; 
+        height: 100%;
+    }
+
+    .text-title {
+        font-size: 4.5rem;
+        font-weight: 500;
+        line-height: 4rem;
+        color: @Styles.LirmiStyles.BrandingViolet;
+    }
+
+    .text-description {
+        font-size: 2rem;
+        font-weight: 400;
+        width: 85%;
+        color: @Styles.LirmiStyles.ColorTextDark;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        gap: 0.4rem;
+    }
+
+    .button-home {
+        display: flex;
+        width: 220px;
+        height: 50px;
+        border-radius: 12px;
+        background-color: @Styles.LirmiStyles.BrandingViolet;
+        color:@Styles.LirmiStyles.ColorTextLight;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .button-home:hover{
+        background-color:  @Styles.LirmiStyles.BrandingPink;
+    }
+
+    .button-navigate {
+        display: flex;
+        width: 220px;
+        height: 50px;
+        border-radius: 12px;
+        background-color: transparent;
+        color:@Styles.LirmiStyles.ColorTextDark;
+        margin-top: 1rem;
+        text-align: center;
+        border: 1px solid @Styles.LirmiStyles.BrandingSkyblue ;
+    }
+    
+    .button-navigate:hover{
+        background-color:  @Styles.LirmiStyles.BrandingYellow;
+        color:@Styles.LirmiStyles.ColorTextDark;
+        border: 1px solid @Styles.LirmiStyles.BrandingYellow;
+    }
+
+
+</style>
+
+<PageTitle>Bienvenido/a</PageTitle>
+
+<MudGrid class="grid-container">
+    <MudItem xs="12" md="5">
+        <MudImage class="image-container" Src="/assets/Images/docente.jpg" Alt="docente" Elevation="25" />
+    </MudItem>
+    <MudItem xs="12" md="6" class="placement-text">
+        <MudText class="text-title" Typo="Typo.h1" GutterBottom="true">El software más usado por colegios</MudText>
+        <MudText class="text-description" Typo="Typo.body2" GutterBottom="true">Comenzá a optimizar la gestión de tu colegio e impulsar el desarrollo de los docentes con nuestra app</MudText>
+        <div class="buttons-container">
+            <MudButton Variant="Variant.Filled" class="button-home" OnClick="@NavigateToHome">Ingresar ahora</MudButton>
+            <MudButton Variant="Variant.Outlined" class="button-navigate" OnClick="@NavigateToDemo">Ver demostración</MudButton>
+        </div>
+    </MudItem>
+</MudGrid>
+
+@code {
+    private void NavigateToHome()
+    {
+        NavigationManager.NavigateTo("/home");
+    }
+
+    private async Task NavigateToDemo()
+    {
+        string url = "https://sitio.lirmi.com/demo-chile?hsCtaTracking=2cc2dde3-6a74-437e-aea5-8f6b7b1fbe0e%7Cb44c17a0-cf53-4d7c-a697-3899e182afec";
+        await JSRuntime.InvokeVoidAsync("window.open", url, "_blank");
+    }
+}

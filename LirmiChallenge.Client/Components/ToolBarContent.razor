@@ -1,0 +1,36 @@
+@namespace LirmiChallenge.Client.Components
+
+@code {
+    [Parameter]
+    public string Title { get; set; } = "";
+    [Parameter]
+    public string Placeholder { get; set; } = "";
+    [Parameter]
+    public string SearchTerm { get; set; } = ""; 
+    [Parameter]
+    public EventCallback<string> OnSearchTextChanged { get; set; }
+
+     private string searchTermLocal = string.Empty;
+
+    protected override void OnParametersSet() 
+    {
+        searchTermLocal = SearchTerm; 
+    }
+
+
+    private async Task OnSearchTextChangedLocal(string text)
+    {
+        searchTermLocal = text;
+        await OnSearchTextChanged.InvokeAsync(text); 
+    }
+}
+
+<MudText Typo="Typo.h6">@Title</MudText>
+<MudSpacer />
+<MudTextField @bind-Value="searchTermLocal"  
+              Placeholder="@Placeholder"
+              Adornment="Adornment.Start"
+              AdornmentIcon="@Icons.Material.Filled.Search"
+              IconSize="Size.Medium"
+              Class="mt-0"
+              TextChanged="@OnSearchTextChangedLocal" />
